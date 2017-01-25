@@ -12,6 +12,7 @@
 		43FB04321E382797002596DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43FB04301E382797002596DB /* Main.storyboard */; };
 		43FB04341E382797002596DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43FB04331E382797002596DB /* Assets.xcassets */; };
 		43FB04371E382797002596DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43FB04351E382797002596DB /* LaunchScreen.storyboard */; };
+		43FB043F1E382817002596DB /* dados.json in Resources */ = {isa = PBXBuildFile; fileRef = 43FB043E1E382817002596DB /* dados.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		43FB04331E382797002596DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43FB04361E382797002596DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43FB04381E382797002596DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43FB043E1E382817002596DB /* dados.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dados.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				43FB042C1E382797002596DB /* AppDelegate.swift */,
 				43FB042E1E382797002596DB /* ViewController.swift */,
+				43FB043E1E382817002596DB /* dados.json */,
 				43FB04301E382797002596DB /* Main.storyboard */,
 				43FB04331E382797002596DB /* Assets.xcassets */,
 				43FB04351E382797002596DB /* LaunchScreen.storyboard */,
@@ -125,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43FB04371E382797002596DB /* LaunchScreen.storyboard in Resources */,
+				43FB043F1E382817002596DB /* dados.json in Resources */,
 				43FB04341E382797002596DB /* Assets.xcassets in Resources */,
 				43FB04321E382797002596DB /* Main.storyboard in Resources */,
 			);

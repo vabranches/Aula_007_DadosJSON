@@ -1,24 +1,28 @@
-//
-//  ViewController.swift
-//  Aula_007_DadosJSON
-//
-//  Created by Swift on 24/01/17.
-//  Copyright © 2017 Swift. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK: Propriedades
+    var arrayPessoas : [[String : AnyObject]] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let urlJSON = Bundle.main.url(forResource: "dados", withExtension: "json")!
+        let JSONDado : Data = try! Data(contentsOf: urlJSON)
+        
+        do{
+            arrayPessoas = try JSONSerialization.jsonObject(with: JSONDado, options: JSONSerialization.ReadingOptions.allowFragments) as![[String : AnyObject]]
+        } catch {}
+        
+        for lista in arrayPessoas{
+            print("\(lista)")
+        }
+        
+        print(arrayPessoas[1])
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 
 }
